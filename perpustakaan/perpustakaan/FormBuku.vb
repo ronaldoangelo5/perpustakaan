@@ -203,4 +203,14 @@ Public Class FormBuku
         FormPenerbit.from = "buku"
         FormPenerbit.ShowDialog()
     End Sub
+
+    Private Sub dgv_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv.CellDoubleClick
+        If from = "peminjaman" Then
+            With FormPeminjaman
+                .tbkdbuku.Text = tbkdbuku.Text
+                .tbjudulbuku.Text = tbjudulbuku.Text
+            End With
+            Me.Close()
+        End If
+    End Sub
 End Class

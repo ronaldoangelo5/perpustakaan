@@ -191,4 +191,17 @@ Public Class FormAnggota
         btnedit.Enabled = True
         btnhapus.Enabled = True
     End Sub
+
+    Private Sub dgv_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv.CellDoubleClick
+        If from = "peminjaman" Then
+            With FormPeminjaman
+                .tbkdanggota.Text = tbkdanggota.Text
+                .tbnama.Text = tbnama.Text
+                .tbalamat.Text = tbalamat.Text
+                .tbnotelp.Text = tbnotelp.Text
+                .tbrole.Text = cbrole.Text
+            End With
+            Me.Close()
+        End If
+    End Sub
 End Class

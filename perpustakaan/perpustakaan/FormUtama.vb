@@ -19,4 +19,8 @@
     Private Sub DataAnggotaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DataAnggotaToolStripMenuItem.Click
         FormAnggota.ShowDialog()
     End Sub
+
+    Private Sub PeminjamanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles PeminjamanToolStripMenuItem.Click
+        FormPeminjaman.ShowDialog()
+    End Sub
 End Class

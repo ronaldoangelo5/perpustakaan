@@ -49,17 +49,19 @@ Partial Class FormBuku
         'dgv
         '
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgv.Location = New System.Drawing.Point(12, 40)
+        Me.dgv.Location = New System.Drawing.Point(9, 32)
+        Me.dgv.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.dgv.Name = "dgv"
         Me.dgv.RowTemplate.Height = 24
-        Me.dgv.Size = New System.Drawing.Size(752, 401)
+        Me.dgv.Size = New System.Drawing.Size(564, 326)
         Me.dgv.TabIndex = 0
         '
         'tbcari
         '
-        Me.tbcari.Location = New System.Drawing.Point(98, 12)
+        Me.tbcari.Location = New System.Drawing.Point(74, 10)
+        Me.tbcari.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tbcari.Name = "tbcari"
-        Me.tbcari.Size = New System.Drawing.Size(666, 22)
+        Me.tbcari.Size = New System.Drawing.Size(500, 20)
         Me.tbcari.TabIndex = 1
         '
         'GroupBox1
@@ -76,162 +78,181 @@ Partial Class FormBuku
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.tbkdbuku)
-        Me.GroupBox1.Location = New System.Drawing.Point(770, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(578, 10)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(400, 180)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Size = New System.Drawing.Size(300, 146)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Data Buku"
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(319, 114)
+        Me.Button2.Location = New System.Drawing.Point(239, 93)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.Size = New System.Drawing.Size(56, 19)
         Me.Button2.TabIndex = 16
         Me.Button2.Text = "Cari"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(319, 83)
+        Me.Button1.Location = New System.Drawing.Point(239, 67)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(56, 19)
         Me.Button1.TabIndex = 15
         Me.Button1.Text = "Cari"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'tbpenerbit
         '
-        Me.tbpenerbit.Location = New System.Drawing.Point(124, 114)
+        Me.tbpenerbit.Location = New System.Drawing.Point(93, 93)
+        Me.tbpenerbit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tbpenerbit.Name = "tbpenerbit"
-        Me.tbpenerbit.Size = New System.Drawing.Size(189, 22)
+        Me.tbpenerbit.Size = New System.Drawing.Size(143, 20)
         Me.tbpenerbit.TabIndex = 14
         '
         'tbpengarang
         '
-        Me.tbpengarang.Location = New System.Drawing.Point(124, 84)
+        Me.tbpengarang.Location = New System.Drawing.Point(93, 68)
+        Me.tbpengarang.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tbpengarang.Name = "tbpengarang"
-        Me.tbpengarang.Size = New System.Drawing.Size(189, 22)
+        Me.tbpengarang.Size = New System.Drawing.Size(143, 20)
         Me.tbpengarang.TabIndex = 13
         '
         'tbtahun
         '
-        Me.tbtahun.Location = New System.Drawing.Point(124, 144)
+        Me.tbtahun.Location = New System.Drawing.Point(93, 117)
+        Me.tbtahun.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tbtahun.Name = "tbtahun"
-        Me.tbtahun.Size = New System.Drawing.Size(100, 22)
+        Me.tbtahun.Size = New System.Drawing.Size(76, 20)
         Me.tbtahun.TabIndex = 12
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(6, 147)
+        Me.Label6.Location = New System.Drawing.Point(4, 119)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(98, 17)
+        Me.Label6.Size = New System.Drawing.Size(74, 13)
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Tahun Terbit :"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(6, 117)
+        Me.Label5.Location = New System.Drawing.Point(4, 95)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(69, 17)
+        Me.Label5.Size = New System.Drawing.Size(52, 13)
         Me.Label5.TabIndex = 9
         Me.Label5.Text = "Penerbit :"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(6, 87)
+        Me.Label4.Location = New System.Drawing.Point(4, 71)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(86, 17)
+        Me.Label4.Size = New System.Drawing.Size(65, 13)
         Me.Label4.TabIndex = 8
         Me.Label4.Text = "Pengarang :"
         '
         'tbjudulbuku
         '
-        Me.tbjudulbuku.Location = New System.Drawing.Point(124, 56)
+        Me.tbjudulbuku.Location = New System.Drawing.Point(93, 46)
+        Me.tbjudulbuku.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tbjudulbuku.Name = "tbjudulbuku"
-        Me.tbjudulbuku.Size = New System.Drawing.Size(270, 22)
+        Me.tbjudulbuku.Size = New System.Drawing.Size(204, 20)
         Me.tbjudulbuku.TabIndex = 6
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(6, 59)
+        Me.Label3.Location = New System.Drawing.Point(4, 48)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(86, 17)
+        Me.Label3.Size = New System.Drawing.Size(66, 13)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Judul Buku :"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(6, 31)
+        Me.Label2.Location = New System.Drawing.Point(4, 25)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(85, 17)
+        Me.Label2.Size = New System.Drawing.Size(66, 13)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Kode Buku :"
         '
         'tbkdbuku
         '
         Me.tbkdbuku.Enabled = False
-        Me.tbkdbuku.Location = New System.Drawing.Point(124, 28)
+        Me.tbkdbuku.Location = New System.Drawing.Point(93, 23)
+        Me.tbkdbuku.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.tbkdbuku.Name = "tbkdbuku"
-        Me.tbkdbuku.Size = New System.Drawing.Size(189, 22)
+        Me.tbkdbuku.Size = New System.Drawing.Size(143, 20)
         Me.tbkdbuku.TabIndex = 3
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(12, 12)
+        Me.Label1.Location = New System.Drawing.Point(9, 10)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(80, 17)
+        Me.Label1.Size = New System.Drawing.Size(61, 13)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Pencarian :"
         '
         'btnbatal
         '
-        Me.btnbatal.Location = New System.Drawing.Point(1095, 198)
+        Me.btnbatal.Location = New System.Drawing.Point(821, 161)
+        Me.btnbatal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnbatal.Name = "btnbatal"
-        Me.btnbatal.Size = New System.Drawing.Size(75, 23)
+        Me.btnbatal.Size = New System.Drawing.Size(56, 19)
         Me.btnbatal.TabIndex = 7
         Me.btnbatal.Text = "Batal"
         Me.btnbatal.UseVisualStyleBackColor = True
         '
         'btnhapus
         '
-        Me.btnhapus.Location = New System.Drawing.Point(1014, 198)
+        Me.btnhapus.Location = New System.Drawing.Point(760, 161)
+        Me.btnhapus.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnhapus.Name = "btnhapus"
-        Me.btnhapus.Size = New System.Drawing.Size(75, 23)
+        Me.btnhapus.Size = New System.Drawing.Size(56, 19)
         Me.btnhapus.TabIndex = 6
         Me.btnhapus.Text = "Hapus"
         Me.btnhapus.UseVisualStyleBackColor = True
         '
         'btnedit
         '
-        Me.btnedit.Location = New System.Drawing.Point(933, 198)
+        Me.btnedit.Location = New System.Drawing.Point(700, 161)
+        Me.btnedit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btnedit.Name = "btnedit"
-        Me.btnedit.Size = New System.Drawing.Size(75, 23)
+        Me.btnedit.Size = New System.Drawing.Size(56, 19)
         Me.btnedit.TabIndex = 5
         Me.btnedit.Text = "Edit"
         Me.btnedit.UseVisualStyleBackColor = True
         '
         'btntambah
         '
-        Me.btntambah.Location = New System.Drawing.Point(852, 198)
+        Me.btntambah.Location = New System.Drawing.Point(639, 161)
+        Me.btntambah.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.btntambah.Name = "btntambah"
-        Me.btntambah.Size = New System.Drawing.Size(75, 23)
+        Me.btntambah.Size = New System.Drawing.Size(56, 19)
         Me.btntambah.TabIndex = 4
         Me.btntambah.Text = "Tambah"
         Me.btntambah.UseVisualStyleBackColor = True
         '
         'FormBuku
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1182, 453)
+        Me.ClientSize = New System.Drawing.Size(886, 368)
         Me.Controls.Add(Me.btnbatal)
         Me.Controls.Add(Me.btnhapus)
         Me.Controls.Add(Me.btnedit)
@@ -240,6 +261,7 @@ Partial Class FormBuku
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.tbcari)
         Me.Controls.Add(Me.dgv)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FormBuku"
         Me.Text = "FormBuku"
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).EndInit()

@@ -25,6 +25,7 @@ Partial Class FormAnggota
         Me.dgv = New System.Windows.Forms.DataGridView()
         Me.tbcari = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.cbrole = New System.Windows.Forms.ComboBox()
         Me.tbnotelp = New System.Windows.Forms.TextBox()
         Me.tbalamat = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -39,7 +40,6 @@ Partial Class FormAnggota
         Me.btnhapus = New System.Windows.Forms.Button()
         Me.btnedit = New System.Windows.Forms.Button()
         Me.btntambah = New System.Windows.Forms.Button()
-        Me.cbrole = New System.Windows.Forms.ComboBox()
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
@@ -48,7 +48,7 @@ Partial Class FormAnggota
         '
         Me.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv.Location = New System.Drawing.Point(9, 32)
-        Me.dgv.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.dgv.Margin = New System.Windows.Forms.Padding(2)
         Me.dgv.Name = "dgv"
         Me.dgv.RowTemplate.Height = 24
         Me.dgv.Size = New System.Drawing.Size(564, 326)
@@ -57,7 +57,7 @@ Partial Class FormAnggota
         'tbcari
         '
         Me.tbcari.Location = New System.Drawing.Point(74, 10)
-        Me.tbcari.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbcari.Margin = New System.Windows.Forms.Padding(2)
         Me.tbcari.Name = "tbcari"
         Me.tbcari.Size = New System.Drawing.Size(500, 20)
         Me.tbcari.TabIndex = 1
@@ -75,18 +75,28 @@ Partial Class FormAnggota
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.tbkdanggota)
         Me.GroupBox1.Location = New System.Drawing.Point(578, 10)
-        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.GroupBox1.Padding = New System.Windows.Forms.Padding(2)
         Me.GroupBox1.Size = New System.Drawing.Size(300, 146)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Data Anggota"
         '
+        'cbrole
+        '
+        Me.cbrole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cbrole.FormattingEnabled = True
+        Me.cbrole.Items.AddRange(New Object() {"Dosen", "Mahasiswa", "Pustakawan"})
+        Me.cbrole.Location = New System.Drawing.Point(93, 116)
+        Me.cbrole.Name = "cbrole"
+        Me.cbrole.Size = New System.Drawing.Size(143, 21)
+        Me.cbrole.TabIndex = 17
+        '
         'tbnotelp
         '
         Me.tbnotelp.Location = New System.Drawing.Point(93, 93)
-        Me.tbnotelp.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbnotelp.Margin = New System.Windows.Forms.Padding(2)
         Me.tbnotelp.Name = "tbnotelp"
         Me.tbnotelp.Size = New System.Drawing.Size(143, 20)
         Me.tbnotelp.TabIndex = 14
@@ -94,7 +104,7 @@ Partial Class FormAnggota
         'tbalamat
         '
         Me.tbalamat.Location = New System.Drawing.Point(93, 68)
-        Me.tbalamat.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbalamat.Margin = New System.Windows.Forms.Padding(2)
         Me.tbalamat.Name = "tbalamat"
         Me.tbalamat.Size = New System.Drawing.Size(202, 20)
         Me.tbalamat.TabIndex = 13
@@ -132,7 +142,7 @@ Partial Class FormAnggota
         'tbnama
         '
         Me.tbnama.Location = New System.Drawing.Point(93, 46)
-        Me.tbnama.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbnama.Margin = New System.Windows.Forms.Padding(2)
         Me.tbnama.Name = "tbnama"
         Me.tbnama.Size = New System.Drawing.Size(204, 20)
         Me.tbnama.TabIndex = 6
@@ -161,7 +171,7 @@ Partial Class FormAnggota
         '
         Me.tbkdanggota.Enabled = False
         Me.tbkdanggota.Location = New System.Drawing.Point(93, 23)
-        Me.tbkdanggota.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.tbkdanggota.Margin = New System.Windows.Forms.Padding(2)
         Me.tbkdanggota.Name = "tbkdanggota"
         Me.tbkdanggota.Size = New System.Drawing.Size(143, 20)
         Me.tbkdanggota.TabIndex = 3
@@ -179,7 +189,7 @@ Partial Class FormAnggota
         'btnbatal
         '
         Me.btnbatal.Location = New System.Drawing.Point(821, 161)
-        Me.btnbatal.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnbatal.Margin = New System.Windows.Forms.Padding(2)
         Me.btnbatal.Name = "btnbatal"
         Me.btnbatal.Size = New System.Drawing.Size(56, 19)
         Me.btnbatal.TabIndex = 7
@@ -189,7 +199,7 @@ Partial Class FormAnggota
         'btnhapus
         '
         Me.btnhapus.Location = New System.Drawing.Point(760, 161)
-        Me.btnhapus.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnhapus.Margin = New System.Windows.Forms.Padding(2)
         Me.btnhapus.Name = "btnhapus"
         Me.btnhapus.Size = New System.Drawing.Size(56, 19)
         Me.btnhapus.TabIndex = 6
@@ -199,7 +209,7 @@ Partial Class FormAnggota
         'btnedit
         '
         Me.btnedit.Location = New System.Drawing.Point(700, 161)
-        Me.btnedit.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btnedit.Margin = New System.Windows.Forms.Padding(2)
         Me.btnedit.Name = "btnedit"
         Me.btnedit.Size = New System.Drawing.Size(56, 19)
         Me.btnedit.TabIndex = 5
@@ -209,22 +219,12 @@ Partial Class FormAnggota
         'btntambah
         '
         Me.btntambah.Location = New System.Drawing.Point(639, 161)
-        Me.btntambah.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.btntambah.Margin = New System.Windows.Forms.Padding(2)
         Me.btntambah.Name = "btntambah"
         Me.btntambah.Size = New System.Drawing.Size(56, 19)
         Me.btntambah.TabIndex = 4
         Me.btntambah.Text = "Tambah"
         Me.btntambah.UseVisualStyleBackColor = True
-        '
-        'cbrole
-        '
-        Me.cbrole.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbrole.FormattingEnabled = True
-        Me.cbrole.Items.AddRange(New Object() {"Dosen", "Mahasiswa", "Pustakawan"})
-        Me.cbrole.Location = New System.Drawing.Point(93, 116)
-        Me.cbrole.Name = "cbrole"
-        Me.cbrole.Size = New System.Drawing.Size(143, 21)
-        Me.cbrole.TabIndex = 17
         '
         'FormAnggota
         '
@@ -239,7 +239,7 @@ Partial Class FormAnggota
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.tbcari)
         Me.Controls.Add(Me.dgv)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "FormAnggota"
         Me.Text = "Data Anggota"
         CType(Me.dgv, System.ComponentModel.ISupportInitialize).EndInit()

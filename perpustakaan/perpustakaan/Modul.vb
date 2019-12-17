@@ -98,4 +98,18 @@ Module Modul
             MsgBox(ex.Message, 16, "Error")
         End Try
     End Sub
+    Sub Querykeranjang(ByVal query As String, ByVal kd_buku As String, ByVal judul As String, ByVal tgl_kembali As Date)
+        Try
+            Using cmd As New MySqlCommand
+                cmd.CommandText = query
+                cmd.Parameters.AddWithValue("@kd_buku", kd_buku)
+                cmd.Parameters.AddWithValue("@judul", judul)
+                cmd.Parameters.AddWithValue("@tgl_kembali", tgl_kembali)
+                cmd.Connection = konek
+                cmd.ExecuteNonQuery()
+            End Using
+        Catch ex As Exception
+            MsgBox(ex.Message, 16, "Error")
+        End Try
+    End Sub
 End Module
