@@ -82,4 +82,20 @@ Module Modul
             MsgBox(ex.Message, 16, "Error")
         End Try
     End Sub
+    Sub Queryanggota(ByVal query As String, ByVal kd_anggota As String, ByVal nama As String, ByVal alamat As String, ByVal no_telp As String, ByVal role As String)
+        Try
+            Using cmd As New MySqlCommand
+                cmd.CommandText = query
+                cmd.Parameters.AddWithValue("@kd_anggota", kd_anggota)
+                cmd.Parameters.AddWithValue("@nama", nama)
+                cmd.Parameters.AddWithValue("@alamat", alamat)
+                cmd.Parameters.AddWithValue("@no_telp", no_telp)
+                cmd.Parameters.AddWithValue("@role", role)
+                cmd.Connection = konek
+                cmd.ExecuteNonQuery()
+            End Using
+        Catch ex As Exception
+            MsgBox(ex.Message, 16, "Error")
+        End Try
+    End Sub
 End Module

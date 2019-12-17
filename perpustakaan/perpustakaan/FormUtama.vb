@@ -15,4 +15,8 @@
     Private Sub FormUtama_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         koneksi()
     End Sub
+
+    Private Sub DataAnggotaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DataAnggotaToolStripMenuItem.Click
+        FormAnggota.ShowDialog()
+    End Sub
 End Class

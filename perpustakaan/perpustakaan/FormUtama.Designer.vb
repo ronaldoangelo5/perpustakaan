@@ -38,7 +38,8 @@ Partial Class FormUtama
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DataMasterToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1282, 28)
+        Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip1.Size = New System.Drawing.Size(962, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -46,47 +47,48 @@ Partial Class FormUtama
         '
         Me.DataMasterToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DataBukuToolStripMenuItem, Me.DataAnggotaToolStripMenuItem, Me.DataKecilToolStripMenuItem})
         Me.DataMasterToolStripMenuItem.Name = "DataMasterToolStripMenuItem"
-        Me.DataMasterToolStripMenuItem.Size = New System.Drawing.Size(102, 24)
+        Me.DataMasterToolStripMenuItem.Size = New System.Drawing.Size(82, 20)
         Me.DataMasterToolStripMenuItem.Text = "Data Master"
         '
         'DataBukuToolStripMenuItem
         '
         Me.DataBukuToolStripMenuItem.Name = "DataBukuToolStripMenuItem"
-        Me.DataBukuToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.DataBukuToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.DataBukuToolStripMenuItem.Text = "Data Buku"
         '
         'DataAnggotaToolStripMenuItem
         '
         Me.DataAnggotaToolStripMenuItem.Name = "DataAnggotaToolStripMenuItem"
-        Me.DataAnggotaToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.DataAnggotaToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.DataAnggotaToolStripMenuItem.Text = "Data Anggota"
         '
         'DataKecilToolStripMenuItem
         '
         Me.DataKecilToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DataPengarangToolStripMenuItem, Me.DataPenerbitToolStripMenuItem})
         Me.DataKecilToolStripMenuItem.Name = "DataKecilToolStripMenuItem"
-        Me.DataKecilToolStripMenuItem.Size = New System.Drawing.Size(181, 26)
+        Me.DataKecilToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.DataKecilToolStripMenuItem.Text = "Data Kecil"
         '
         'DataPengarangToolStripMenuItem
         '
         Me.DataPengarangToolStripMenuItem.Name = "DataPengarangToolStripMenuItem"
-        Me.DataPengarangToolStripMenuItem.Size = New System.Drawing.Size(190, 26)
+        Me.DataPengarangToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.DataPengarangToolStripMenuItem.Text = "Data Pengarang"
         '
         'DataPenerbitToolStripMenuItem
         '
         Me.DataPenerbitToolStripMenuItem.Name = "DataPenerbitToolStripMenuItem"
-        Me.DataPenerbitToolStripMenuItem.Size = New System.Drawing.Size(190, 26)
+        Me.DataPenerbitToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.DataPenerbitToolStripMenuItem.Text = "Data Penerbit"
         '
         'FormUtama
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1282, 553)
+        Me.ClientSize = New System.Drawing.Size(962, 449)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "FormUtama"
         Me.Text = "FormUtama"
         Me.MenuStrip1.ResumeLayout(False)
